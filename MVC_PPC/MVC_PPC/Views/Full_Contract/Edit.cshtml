@@ -115,15 +115,16 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default" onclick="javascript:return ShowMessage()" />
+
+                <button class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
             </div>
+
+
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @Scripts.Render("~/bundles/jqueryval")
 

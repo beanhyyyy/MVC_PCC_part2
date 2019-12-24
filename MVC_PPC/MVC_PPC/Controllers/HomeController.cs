@@ -26,5 +26,12 @@ namespace MVC_PPC.Controllers
 
             return View();
         }
+
+        public ActionResult AboutUs()
+        {
+            ViewBag.Message = "Your About us.";
+
+            return View();
+        }
     }
 }

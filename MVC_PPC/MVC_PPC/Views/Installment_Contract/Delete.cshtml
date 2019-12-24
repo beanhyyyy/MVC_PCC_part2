@@ -87,3 +87,18 @@
 
 
         </table>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group" style="padding-top: 30px">
+                <div class="col-md-offset-1 col-md-10">
+                    <input type="submit" value="Delete" class="btn btn-default" onclick="javascript:return ShowMessage()" />
+
+                    <button class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
+                </div>
+
+
+            </div>
+        }

@@ -1,8 +1,7 @@
 ﻿@model MVC_PPC.Models.Installment_ContractModels
-@{   
+@{
     ViewBag.Title = "Print";
 }
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +12,14 @@
     <a href="~/Content/fonts/SourceSansPro-Regular.ttf"></a>
 
 </head>
+
+
 <body>
-    <header class="clearfix">
+    <br />
+    <br />
+    <br />
+    <br />
+    <header class="clearfix" style="margin-left:100px">
         <div id="logo">
             <img src="~/Content/images/PPCLogo-128-128.png" />
         </div>
@@ -26,13 +31,13 @@
         </div>
     </header>
     <main>
-        <div>
+        <div align="center">
             <h1 style="text-align:center; color:#57B223">HỢP ĐỒNG MUA BẤT ĐỘNG SẢN</h1>
             <h2 class="contract">Số HĐ: @Model.Installment_Contract_Code </h2>
             <h4 class="date"> <i> Hôm nay, ngày @Model.Date_Of_Contract Chúng tôi gồm: </i></h4>
         </div>
-        <div id="details" class="clearfix">
-            <table border="1">
+        <div id="details" class="clearfix" align="center">
+            <table class="table-bordered table-condensed table-hover">
                 <tr>
                     <td style="border-right:1px solid black">
                         <div id="client">
@@ -55,7 +60,8 @@
                 </tr>
             </table>
         </div>
-        <span>
+        <br />
+        <div style="margin-left:100px">
             <h4>Sau khi bàn bạc, hai bên thống nhất ký kết Hợp đồng với các điều kiện và điều khoản như sau: </h4>
             <h4>Điều 1: Đối tượng của hợp đồng</h4>
 
@@ -72,14 +78,14 @@
             <p> 1. Hai bên đã hiểu rõ quyền, nghĩa vụ và lợi ích hợp pháp của mình, ý nghĩa và hậu quả pháp lý của việc công chứng này, sau khi đã được nghe lời giải thích của người có thẩm quyền công chứng hoặc chứng thực dưới đây. </p>
             <p> 2. Hai bên đã tự đọc lại hợp đồng này, đã hiểu và đồng ý tất cả các điều khoản ghi trong hợp đồng này.</p>
             <p> 3. Hợp đồng này được lập thành 02 bản. Bên A giữ 01 bản, Bên B giữ 01 bản</p>
-        </span>
-        <table style="text-align:center;">
+        </div>
+        <table style="text-align:center; margin-left:100px">
             <tr>
-                <td class="sign">
+                <td>
                     <h4> BÊN BÁN </h4>
                     </h3>(Ký và ghi rõ họ và tên)</h3>
                 </td>
-                <td class="sign">
+                <td style="padding-left:1300px">
                     <h4>BÊN MUA </h4>
                     </h3>(Ký và ghi rõ họ và tên)</h3>
                 </td>
@@ -88,8 +94,11 @@
 
 
     </main>
-    <footer>
+    <footer align="center">
         Công ty ABC - Tài sản thực, giá trị thực.
     </footer>
+    <br />
 </body>
 </html>
+
+
